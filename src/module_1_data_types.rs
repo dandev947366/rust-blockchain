@@ -76,6 +76,23 @@ pub fn variable_shadowing_n_conversion(){
     let block_height_str:String = block_height.to_string();
     println!("Block height: {}, Block height string: {}", block_height, block_height_str);
 }
+
+pub fn mutability_example(){
+    let _token_supply:i32 = 2500;
+   // token_supply=2000; Erro =>> cannot assign twice to immutable variable
+    let mut account_balance:i32 = 2500;
+    println!("Before transaction: User balance = {}", account_balance);
+    account_balance -= 50;
+    println!("After transaction: User balance = {}", account_balance);
+}
+
+pub fn tuple_destructuring_example(){
+    let transaction_info: (&str, i32, f64) = ("Transfer", 200, 0.002);
+    let (tx_type, tx_amount, tx_fee) = transaction_info;
+    println!("Transaction Type: {}, Amount {}, Fee: {}", tx_type, tx_amount, tx_fee);
+    println!("Transaction Type: {}, Amount {}, Fee: {}", transaction_info.0, transaction_info.1, transaction_info.2);
+
+}
 pub fn demo(){
     primitive_data_types();
     println!("\n");
@@ -84,5 +101,9 @@ pub fn demo(){
     logication_operations();
     println!("\n");
     variable_shadowing_n_conversion();
+    println!("\n");
+    mutability_example();
+    println!("\n");
+    tuple_destructuring_example();
 }
 
