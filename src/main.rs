@@ -1,3 +1,5 @@
+mod module_1_data_types;
+
 fn main() {
-    println!("Hello, world!");
+    module_1_data_types::demo();
 }
