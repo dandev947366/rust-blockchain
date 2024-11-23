@@ -1,6 +1,7 @@
-mod module_1_data_types;
+mod module_2_control_flow;
 
 fn main() {
     println!("\n");
-    module_1_data_types::demo();
+    module_2_control_flow::demo();
+    println!("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 }
