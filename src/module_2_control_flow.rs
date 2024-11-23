@@ -67,6 +67,23 @@ pub fn match_pattern_example(number: i32){
 
 }
 
+pub fn match_return_example(status_code: i32) -> &'static str {
+    match status_code {
+        200 => "Transaction successful.",
+        201 => "Transaction created successfully.",
+        202 => "Transaction accepted for processing.",
+        400 => "Invalid transaction request.",
+        401 => "Unauthorized access to the blockchain.",
+        403 => "Transaction forbidden.",
+        404 => "Transaction not found.",
+        409 => "Transaction conflict detected.",
+        500 => "Internal blockchain error.",
+        503 => "Blockchain service unavailable.",
+        _ => "Unknown status.",
+    }
+}
+
+
 pub fn demo(){
     println!("\n");
     // basic_if_else();
@@ -74,5 +91,7 @@ pub fn demo(){
     //while_loop_example();
     //for_loop_example();
     //infinite_loop();
-    match_pattern_example(2);
+   // match_pattern_example(2);
+   let status_message: &str = match_return_example(500);
+   println!("Status message: {}", status_message);
 }
