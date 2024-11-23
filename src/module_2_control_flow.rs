@@ -57,6 +57,15 @@ pub fn infinite_loop(){
     }
 }
 
+pub fn match_pattern_example(number: i32){
+    match number{
+        1 => println!("Executing token transfer."),
+        2 | 3 | 4 | 7 => println!("Executing a prime validator operation."),
+        10..=19 => println!("Performing governance between block 10 and 19."),
+        _ => println!("Unrecognized operation."),
+    }
+
+}
 
 pub fn demo(){
     println!("\n");
@@ -64,5 +73,6 @@ pub fn demo(){
     // match_example(1);
     //while_loop_example();
     //for_loop_example();
-    infinite_loop();
+    //infinite_loop();
+    match_pattern_example(2);
 }
