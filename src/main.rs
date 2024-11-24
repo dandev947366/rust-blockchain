@@ -1,7 +1,7 @@
-mod module_2_control_flow;
+mod module_3_function_closure;
 
 fn main() {
     println!("\n");
-    module_2_control_flow::demo();
-    println!("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+    module_3_function_closure::demo();
+    println!("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 }
