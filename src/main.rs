@@ -1,7 +1,6 @@
-mod module_3_function_closure;
-
+mod module_4_data_structures;
 fn main() {
     println!("\n");
-    module_3_function_closure::demo();
-    println!("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    module_4_data_structures::demo();
+    println!("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 }
